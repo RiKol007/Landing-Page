@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="navigation">
+        <div class="heading">
+            <h1>Landing Page</h1>
+        </div>
+        <div class="icons">
+            <ul id="menulist">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Services</li>
+            </ul>
+        </div>
+        <div class="register">
+            <button id="hup" onclick="toggleMenu()">icons</button>
+            <button>Login</button>
+            <button>Sign up</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-body-content">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Laudantium voluptate</p>
+            <button id="start">Get Started</button>
+            <div class="social-media">
+                <p>Follow us on social media</p>
+                <div class="icons">
+                    <i class="ri-facebook-circle-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="sonny-mauricio-yhc4pSbl01A-unsplash-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-heading">
+            <h1>About us</h1>
+        </div>
+        <div class="about-boxes">
+            <div class="container">
+                <div class="container-content">
+                    <h2>Benefits</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis odit tempora beatae voluptates culpa vitae eius magnam, officia, corporis atque dolores dolore eaque, consequatur necessitatibus.</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-content">
+                    <h2>Results</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis odit tempora beatae voluptates culpa vitae eius magnam, officia, corporis atque dolores dolore eaque, consequatur necessitatibus.</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-content">
+                    <h2>Assurity</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis odit tempora beatae voluptates culpa vitae eius magnam, officia, corporis atque dolores dolore eaque, consequatur necessitatibus.</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="planning">
+        <div class="planning-content">
+            
+            <h1>Start Your 30-Day Plan Now !</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque, porro ex incidunt tenetur sunt repellendus id minima officiis officia nihil ratione, quo asperiores ad!</p>
+            <button>Start Now</button>
+            
+        </div>
+    </div>
+</body>
+<script>
+    const menulist = document.getElementById("menulist");
+    menulist.style.maxHeight = "0px";
+    function toggleMenu(){
+        if(menulist.style.maxHeight == "0px")
+        {
+            menulist.style.maxHeight = "130px";
+        }
+        else{
+            menulist.style.maxHeight = "0px";
+        }
+    }
+</script>
+</html>
